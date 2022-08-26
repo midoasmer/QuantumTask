@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<meta charset="UTF-8">
+<meta name="Task" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/task.css">
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Quantume</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Link1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link4</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<h3 id="clientName">بيانات الطفل أحمد محمد أحمد</h3>
+<div class="text-dark font-weight-bold" id="subTitle">
+    عمل تقيم جديد
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-3"><label>الطفل:أحمد محمد أحمد</label></div>
+        <div class="col-3"><label>التقيم: 1-6 Help</label></div>
+        <div class="col-3"><label>عمر الطفل:10</label></div>
+        <div class="col-3"><label>عمر التقيم: 0-73</label></div>
+    </div>
+    <div class="row">
+        <div class="col-3"><label>نقاط القوة: <span style="color: green">0</span></label></div>
+        <div class="col-3"><label>نقاط الضعف:<span style="color: red">0</span></label></div>
+        <div class="col-3"><label>أخرى:<span style="color: blue">0</span></label></div>
+        <div class="col-3"><label>الفجوة العمرية:<span style="color: #0d6efd">5 شهور</span></label></div>
+    </div>
+    <!--    start first main lesson-->
+    <div class="lesson" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false"
+         aria-controls="multiCollapseExample1">
+        <div class="grid text-center">
+            <div class="row">
+                <div class="col-2"><label>المجال:التنظيم الحسي</label></div>
+                <div class="col-2"><label>المجالات الفرعيه:13</label></div>
+                <div class="col-2"><label>مهارات متاحه:158</label></div>
+                <div class="col-1"><label>متبقى:158</label></div>
+                <div class="col-2"><label>نقاط القوة:0</label></div>
+                <div class="col-2"><label>نقاط الضعف:0</label></div>
+                <div class="col-1"><label>أخرى: 0</label></div>
+            </div>
+        </div>
+    </div>
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <!--    start first sub lesson-->
+        <div class="lessonLink" data-bs-toggle="collapse" href="#options1" role="button" aria-expanded="false"
+             aria-controls="options1">
+            <div class="row">
+                <div class="col-2"><label>المجال الفرعى:التنظيم الحسي</label></div>
+                <div class="col-2"><label>المجالات الفرعيه:13</label></div>
+                <div class="col-2"><label>مهارات متاحه:<span id="totalSpan1" style="color: blue">158</span></label>
+                </div>
+                <div class="col-1"><label>متبقى:<span id="remainSpan1" style="color: blue">158</span></label></div>
+                <div class="col-2"><label>نقاط القوة:<span id="yesSpan1" style="color: blue">0</span></label></div>
+                <div class="col-2"><label>نقاط الضعف:<span id="noSpan1" style="color: blue">0</span></label></div>
+                <div class="col-1"><label>أخرى:<span id="otherSpan1" style="color: blue">0</span></label></div>
+            </div>
+        </div>
+        <div class="collapse multi-collapse" id="options1">
+            <table class="table" id="optionTable1">
+                <thead>
+                <tr>
+                    <th colspan="3" scope="col">مسلسل العمر المهارة</th>
+                    <th scope="col" class="text-center">نعم</th>
+                    <th scope="col" class="text-center">لا</th>
+                    <th scope="col" class="text-center">غير قابل للظهور</th>
+                    <th scope="col" class="text-center">غير واضح</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="table-secondary">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row1" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row1" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row1" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row1" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-success">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row2" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row2" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row2" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row2" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-danger">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row3" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row3" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row3" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row3" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-warning">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row4" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row4" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row4" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row4" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-info">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row5" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row5" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row5" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row5" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-dark">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row6" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row6" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row6" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row6" onchange="calculate(1)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--    end first sub lesson-->
+        <!--    start second sub lesson-->
+        <div class="lessonLink" data-bs-toggle="collapse" href="#options2" role="button" aria-expanded="false"
+             aria-controls="options1">
+            <div class="row">
+                <div class="col-2"><label>المجال الفرعى:التنظيم الحسي</label></div>
+                <div class="col-2"><label>المجالات الفرعيه:13</label></div>
+                <div class="col-2"><label>مهارات متاحه:<span id="totalSpan2" style="color: blue">158</span></label>
+                </div>
+                <div class="col-1"><label>متبقى:<span id="remainSpan2" style="color: blue">158</span></label></div>
+                <div class="col-2"><label>نقاط القوة:<span id="yesSpan2" style="color: blue">0</span></label></div>
+                <div class="col-2"><label>نقاط الضعف:<span id="noSpan2" style="color: blue">0</span></label></div>
+                <div class="col-1"><label>أخرى:<span id="otherSpan2" style="color: blue">0</span></label></div>
+            </div>
+        </div>
+        <div class="collapse multi-collapse" id="options2">
+            <table class="table" id="optionTable2">
+                <thead>
+                <tr>
+                    <th colspan="3" scope="col">مسلسل العمر المهارة</th>
+                    <th scope="col" class="text-center">نعم</th>
+                    <th scope="col" class="text-center">لا</th>
+                    <th scope="col" class="text-center">غير قابل للظهور</th>
+                    <th scope="col" class="text-center">غير واضح</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="table-secondary">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row7" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row7" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row7" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row7" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-success">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row8" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row8" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row8" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row8" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-danger">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row9" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row9" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row9" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row9" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-warning">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row10" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row10" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row10" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row10" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-info">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row11" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row11" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row11" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row11" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-dark">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row12" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row12" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row12" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row12" onchange="calculate(2)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--    end second sub lesson-->
+        <!--    start third sub lesson-->
+        <div class="lessonLink" data-bs-toggle="collapse" href="#options3" role="button" aria-expanded="false"
+             aria-controls="options1">
+            <div class="row">
+                <div class="col-2"><label>المجال الفرعى:التنظيم الحسي</label></div>
+                <div class="col-2"><label>المجالات الفرعيه:13</label></div>
+                <div class="col-2"><label>مهارات متاحه:<span id="totalSpan3" style="color: blue">158</span></label>
+                </div>
+                <div class="col-1"><label>متبقى:<span id="remainSpan3" style="color: blue">158</span></label></div>
+                <div class="col-2"><label>نقاط القوة:<span id="yesSpan3" style="color: blue">0</span></label></div>
+                <div class="col-2"><label>نقاط الضعف:<span id="noSpan3" style="color: blue">0</span></label></div>
+                <div class="col-1"><label>أخرى:<span id="otherSpan3" style="color: blue">0</span></label></div>
+            </div>
+        </div>
+        <div class="collapse multi-collapse" id="options3">
+            <table class="table" id="optionTable3">
+                <thead>
+                <tr>
+                    <th colspan="3" scope="col">مسلسل العمر المهارة</th>
+                    <th scope="col" class="text-center">نعم</th>
+                    <th scope="col" class="text-center">لا</th>
+                    <th scope="col" class="text-center">غير قابل للظهور</th>
+                    <th scope="col" class="text-center">غير واضح</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="table-secondary">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row13" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row13" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row13" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row13" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-success">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row14" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row14" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row14" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row14" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-danger">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row15" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row15" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row15" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row15" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-warning">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row16" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row16" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row16" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row16" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-info">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row17" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row17" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row17" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row17" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                <tr class="table-dark">
+                    <th class="text-center">28</th>
+                    <td class="text-center">60-70</td>
+                    <td>يستمتع بالاستماع للقصص ويحب مشاهدتها باستقلاليه</td>
+                    <td class="text-center"><input name="row18" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row18" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row18" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                    <td class="text-center"><input name="row18" onchange="calculate(3)" class="form-check-input mt-0"
+                                                   type="radio" value=""
+                                                   aria-label="Radio button for following text input"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--    end third sub lesson-->
+    </div>
+    <!--    end first main lesson-->
+    <!--    start second main lesson-->
+    <div class="lesson" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false"
+         aria-controls="multiCollapseExample1">
+        <div class="grid text-center">
+            <div class="row">
+                <div class="col-2"><label>المجال:التنظيم الحسي</label></div>
+                <div class="col-2"><label>المجالات الفرعيه:13</label></div>
+                <div class="col-2"><label>مهارات متاحه:158</label></div>
+                <div class="col-1"><label>متبقى:158</label></div>
+                <div class="col-2"><label>نقاط القوة:0</label></div>
+                <div class="col-2"><label>نقاط الضعف:0</label></div>
+                <div class="col-1"><label>أخرى: 0</label></div>
+            </div>
+        </div>
+    </div>
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <a class="lessonLink" href="#">
+            مجال فرعى 1
+        </a>
+        <a class="lessonLink" href="#">
+            مجال فرعى 2
+        </a>
+    </div>
+    <!--    end second main lesson-->
+    <!--    start third main lesson-->
+    <div class="lesson" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false"
+         aria-controls="multiCollapseExample1">
+        <div class="grid text-center">
+            <div class="row">
+                <div class="col-2"><label>المجال:التنظيم الحسي</label></div>
+                <div class="col-2"><label>المجالات الفرعيه:13</label></div>
+                <div class="col-2"><label>مهارات متاحه:158</label></div>
+                <div class="col-1"><label>متبقى:158</label></div>
+                <div class="col-2"><label>نقاط القوة:0</label></div>
+                <div class="col-2"><label>نقاط الضعف:0</label></div>
+                <div class="col-1"><label>أخرى: 0</label></div>
+            </div>
+        </div>
+    </div>
+    <div class="collapse multi-collapse" id="multiCollapseExample3">
+        <a class="lessonLink" href="#">
+            مجال فرعى 1
+        </a>
+        <a class="lessonLink" href="#">
+            مجال فرعى 2
+        </a>
+    </div>
+    <!--    end third main lesson-->
+
+    <div class="grid text-center">
+        <div class="row" id="containerFooter">
+            <button class="btn btn-primary col-3" type="button">اعتماد</button>
+            <button class="btn btn-secondary col-3" type="button">حفظ</button>
+        </div>
+    </div>
+</div>
+<script src="assets/js/bootstrap.min.js"></script>
+<!--<script src='assets/js/jquery.min.js'></script>-->
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/task.js"></script>
+<!-- Latest compiled JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+</body>
+</html>
